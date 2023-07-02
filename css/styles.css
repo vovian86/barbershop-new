@@ -4,6 +4,7 @@
     --main-title-color: #ffffff;
     --second-title-color: #303030;
     --accent-color: #ff6c00;
+    --main-bg-color: #F7F7F7;
     --typical-margin: 20px;
     }
 
@@ -150,6 +151,7 @@ img {
 
 .hero-list {
     width: 90px;
+    padding-left: 0;
 }
 .hero-link {
     font-weight: 600;
@@ -266,11 +268,15 @@ img {
 }
                 
 .prices-list {
-    border: 1px solid #ffffff;
+    /* border: 1px solid #ffffff; */
+        background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.20) 100%);
     padding: 30px 40px;
     flex-grow: 1;
 }
 
+.prices-list:not(:first-child) {
+    background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.20) 100%);
+}
 .prices-item-text {
     font-size: 18px;
     line-height: 1.67;
@@ -301,18 +307,24 @@ img {
     padding-bottom: 137px;
 }
 
+.benefits .container {
+    display: flex;
+}
 .benefits-list {
-    width: 370px;
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    justify-content: center;
+        margin-right: 130px;
 }
+
 
 .benefits-item {
     display: block;
     width: 170px;
     height: 133px;
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
+        background-color: var(--main-bg-color);
     padding: 20px 24px;
 }
 
@@ -360,6 +372,7 @@ img {
 .masters {
     padding-top: 130px;
     padding-bottom: 130px;
+    background-color: var(--main-bg-color);
 }
 .masters-top-text {
     margin-bottom: var(--typical-margin);
@@ -391,7 +404,7 @@ img {
     line-height: 1.39;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #303030;
+    color: var(--second-title-color);
     margin-bottom: 8px;
         margin-top: 30px;
 }
@@ -418,9 +431,12 @@ img {
     .masters-soc-link {
         width: 100%;
         height: 100%;
-        background-color: tomato;
+        background-color: var(--main-btn-color);
         border-radius: 50%;
         display: flex;
+        align-items: center;
+            justify-content: center;
+            color: var(--second-btn-color);
     }
     
     .masters-soc-list {
@@ -430,9 +446,16 @@ img {
     }
     
     .masters-soc-icon {
-        fill: #ffffff;
-    }
-    
+        fill: currentColor;
+        }
+                .masters-soc-link:hover,
+                .masters-soc-link:focus {
+                    background-color: var(--accent-color);
+                    color: var(--main-btn-color);
+                }
+        
+                /* Універсальний спосіб, не тільки для кольору і для іконок, але й для розміру, анімації, бекграунду...
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
     .masters-soc-link:hover .masters-soc-icon,
     .masters-soc-link:focus .masters-soc-icon {
         fill: chocolate;
@@ -443,6 +466,7 @@ img {
         background-color: teal;
 }
 
+*/
 /* ----------GALLERY---------- */
 
 .gallery {
@@ -456,7 +480,7 @@ img {
     
     .gallery-list {
         display: flex;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         margin-left: -30;
         margin-bottom: -30px;
         padding: 0;
@@ -468,6 +492,9 @@ img {
         margin-bottom: 30px;
 }
 
+.gallery-item:first-child {
+    margin-left: 0;
+}
 /* ----------ONLINE---------- */
 
 .online {

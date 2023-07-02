@@ -19,7 +19,10 @@
 
     <header class="header">
         <div class="container">
-        <a class="header-logo" href=""><img src="./images/Logo.svg" alt="Logo" width="65.97"></a>
+        <a class="header-logo" href="">
+            <svg class="logo-icon" width="66" height="55">
+                <use href="./images/symbol-defs.svg#icon-logo "></use>
+            </svg></a>
         <nav class="header-nav">
             <ul class="header-list list">
                 <li class="header-item"><a class="header-link link" href="">О нас</a></li>
@@ -143,11 +146,13 @@
                     <p class="benefits-item-text">Подарков постоянным клиентам</p>
                 </li>
             </ul>
-            <p class="benefits-top-text top-text">Cтарая традиционная школа</p>
+            <div class="benefits-content">
+                <p class="benefits-top-text top-text">Cтарая традиционная школа</p>
             <h2 class="benefits-title title">Почему приходят именно к нам?</h2>
             <p class="benefits-bottom-text bottom-text">О нас говорят только хорошее. Но лучше 1 раз увидеть и
                 прочувствовать, чем
                 10 раз прочитать. </p>
+            </div>
             </div>
         </section>
 
@@ -166,20 +171,67 @@
                                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
                                 </svg>
                             </a></li>
-                        <li class="masters-soc-item"><a href="" class="masters-soc-link link"></a></li>
-                        <li class="masters-soc-item"><a href="" class="masters-soc-link link"></a></li>
-                        <li class="masters-soc-item"><a href="" class="masters-soc-link link"></a></li>
+                        <li class="masters-soc-item"><a href="" class="masters-soc-link link"><svg class="masters-soc-icon" width="20"
+                                    height="20">
+                                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                </svg></a></li>
+                        <li class="masters-soc-item"><a href="" class="masters-soc-link link"><svg class="masters-soc-icon" width="20"
+                                    height="20">
+                                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                </svg></a></li>
+                        <li class="masters-soc-item"><a href="" class="masters-soc-link link"><svg class="masters-soc-icon" width="20"
+                                    height="20">
+                                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                </svg></a></li>
                     </ul>
                 </li>
                 <li class="masters-item">
                     <img src="./images/masters-img-2.jpg" alt="Барбер стрижет клиента" width="370" height="346">
                     <h3 class="masters-item-title" lang="en">Michele Doe</h3>
                     <p class="masters-item-text" lang="en">Extreme Barber</p>
+                    <ul class="masters-soc-list list">
+                        <li class="masters-soc-item"><a href="" class="masters-soc-link link">
+                                <svg class="masters-soc-icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a></li>
+                        <li class="masters-soc-item"><a href="" class="masters-soc-link link"><svg class="masters-soc-icon" width="20"
+                                    height="20">
+                                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                </svg></a></li>
+                        <li class="masters-soc-item"><a href="" class="masters-soc-link link"><svg class="masters-soc-icon" width="20"
+                                    height="20">
+                                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                </svg></a></li>
+                        <li class="masters-soc-item"><a href="" class="masters-soc-link link"><svg class="masters-soc-icon" width="20"
+                                    height="20">
+                                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                </svg></a></li>
+                    </ul>
                 </li>
                 <li class="masters-item">
                     <img src="./images/masters-img-3.jpg" alt="Барбер стрижет клиента" width="370" height="346">
                     <h3 class="masters-item-title" lang="en">Alan Black</h3>
                     <p class="masters-item-text" lang="en">Extreme Barber</p>
+                    <ul class="masters-soc-list list">
+                        <li class="masters-soc-item"><a href="" class="masters-soc-link link">
+                                <svg class="masters-soc-icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a></li>
+                        <li class="masters-soc-item"><a href="" class="masters-soc-link link"><svg class="masters-soc-icon" width="20"
+                                    height="20">
+                                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                </svg></a></li>
+                        <li class="masters-soc-item"><a href="" class="masters-soc-link link"><svg class="masters-soc-icon" width="20"
+                                    height="20">
+                                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                </svg></a></li>
+                        <li class="masters-soc-item"><a href="" class="masters-soc-link link"><svg class="masters-soc-icon" width="20"
+                                    height="20">
+                                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                </svg></a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -203,7 +255,7 @@
                 <li class="gallery-item">
                     <img src="./images/gallery-img-4.jpg" alt="Барбер стрижет клиента" width="270" height="360">
                 </li>
-<li class="gallery-item">
+<!-- <li class="gallery-item">
     <img src="./images/gallery-img-1.jpg" alt="Барбер стрижет клиента" width="270" height="360">
 </li>
 <li class="gallery-item">
@@ -214,7 +266,7 @@
 </li>
 <li class="gallery-item">
     <img src="./images/gallery-img-4.jpg" alt="Барбер стрижет клиента" width="270" height="360">
-</li>
+</li> -->
 
             </ul>
             </div>
