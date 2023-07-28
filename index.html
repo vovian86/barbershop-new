@@ -25,7 +25,7 @@
             </svg></a>
         <nav class="header-nav">
             <ul class="header-list list">
-                <li class="header-item"><a class="header-link link" href="">О нас</a></li>
+                <li class="header-item"><a class="header-link current link" href="">О нас</a></li>
                 <li class="header-item"><a class="header-link link" href="">Услуги и цены</a></li>
                 <li class="header-item"><a class="header-link link" href="#masters">Мастера</a></li>
                 <li class="header-item"><a class="header-link link" href="">Контакты</a></li>
@@ -33,7 +33,7 @@
         </nav>
         <div class="header-connect">
             <a class="header-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
-            <button class="header-btn btn" type="button">Онлайн-запись</button>
+            <button class="header-btn btn" type="button" data-modal-open>Онлайн-запись</button>
         </div>
     </div>
     </header>
@@ -42,12 +42,14 @@
 
         <section class="hero">
             <div class="container">
-                <ul class="hero-list list">
+                <div class="hero-soc">
+                    <ul class="hero-list list">
                     <li class="hero-item"><a class="hero-link link" href="" target="_blank"
                             rel="noopener nofollow noreferrer">Instagram</a></li>
                     <li class="hero-item"><a class="hero-link link" href="" target="_blank"
                             rel="noopener nofollow noreferrer">Youtube</a></li>
                 </ul>
+                </div>
                 <div class="hero-content">
                 <p class="hero-top-text top-text" lang="en">A hair salon for men in Kyiv</p>
                 <h1 class="hero-title" lang="en">BarberShop</h1>
@@ -85,7 +87,7 @@
             <p class="prices-top-text top-text">Проведи время в компании лучших мастеров</p>
             <h2 class="prices-title title">Услуги и цены</h2>
             <div class="prices-wrap">
-                <ul class="prices-list list">
+                <ul class="prices-list prices-list-light list">
                     <li class="prices-item">
                         <p class="prices-item-text">Мужская стрижка</p>
                         <p class="prices-item-text">от 300 грн.</p>
@@ -103,7 +105,7 @@
                         <p class="prices-item-text">от 200 грн.</p>
                     </li>
                 </ul>
-                <ul class="prices-list list">
+                <ul class="prices-list prices-list-dark list">
                     <li class="prices-item">
                         <p class="prices-item-text">Cтрижка у стажера</p>
                         <p class="prices-item-text">от 50 грн.</p>
@@ -162,7 +164,13 @@
             <h2 class="masters-title title">Наши мастера</h2>
             <ul class="masters-list list">
                 <li class="masters-item">
-                    <img src="./images/masters-img-1.jpg" alt="Барбер стрижет клиента" width="370" height="346">
+                    <div class="masters-top-wrap">
+                        <img src="./images/masters-img-1.jpg" alt="Барбер стрижет клиента" width="370" height="346">
+                        <p class="masters-hidden-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptas debitis, voluptatem magni maxime ad sequi
+                            nam tempore doloribus eos eaque fugit et odit atque, ex aliquam, molestiae nisi expedita?
+                        </p>
+                    </div>
                     <h3 class="masters-item-title" lang="en">John Smith</h3>
                     <p class="masters-item-text" lang="en">Extreme Barber</p>
                     <ul class="masters-soc-list list">
@@ -186,7 +194,14 @@
                     </ul>
                 </li>
                 <li class="masters-item">
-                    <img src="./images/masters-img-2.jpg" alt="Барбер стрижет клиента" width="370" height="346">
+                    <div class="masters-top-wrap"><img src="./images/masters-img-2.jpg" alt="Барбер стрижет клиента" width="370"
+                            height="346">
+                        <p class="masters-hidden-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptas debitis, voluptatem magni maxime ad
+                            sequi
+                            nam tempore doloribus eos eaque fugit et odit atque, ex aliquam, molestiae nisi expedita?
+                        </p>
+                    </div>
                     <h3 class="masters-item-title" lang="en">Michele Doe</h3>
                     <p class="masters-item-text" lang="en">Extreme Barber</p>
                     <ul class="masters-soc-list list">
@@ -210,7 +225,14 @@
                     </ul>
                 </li>
                 <li class="masters-item">
-                    <img src="./images/masters-img-3.jpg" alt="Барбер стрижет клиента" width="370" height="346">
+                    <div class="masters-top-wrap"><img src="./images/masters-img-3.jpg" alt="Барбер стрижет клиента" width="370"
+                            height="346">
+                        <p class="masters-hidden-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptas debitis, voluptatem magni maxime ad
+                            sequi
+                            nam tempore doloribus eos eaque fugit et odit atque, ex aliquam, molestiae nisi expedita?
+                        </p>
+                    </div>
                     <h3 class="masters-item-title" lang="en">Alan Black</h3>
                     <p class="masters-item-text" lang="en">Extreme Barber</p>
                     <ul class="masters-soc-list list">
@@ -272,28 +294,32 @@
             </div>
         </section>
 
+<div class="contact-wrap">
+    <div class="container">
         <section class="online">
-            <h2 class="online-title title">Онлайн-запись</h2>
+        <h2 class="online-title title">Онлайн-запись</h2>
         </section>
 
-        <section class="contacts">
-            <h2 class="contacts-title title">Контакты</h2>
-            <address class="contacts-address">
-                <ul class="contacts-list list">
-                    <li class="contacts-item"><a class="contacts-link link"
-                            href="https://goo.gl/maps/tfbxRXFBMwgMF5U19?coh=178573&entry=tt" target="_blank"
-                            rel="noopener nofollow noreferrer">ул. Васильковская, 7А
-                            Киев, 08132</a></li>
-                    <li class="contacts-item"><a class="contacts-link link" href="tel:+380441111111">+38 044 111 11
-                            11</a>
-                    </li>
-                    <li class="contacts-item"><a class="contacts-link"
-                            href="mailto:barbershop@email.com">barbershop@email.com</a></li>
-                </ul>
-            </address>
-            <p class="contacts-subtitle">Время работы</p>
-            <p class="contacts-time">Ежедневно с 9:00 до 22:00</p>
-        </section>
+    <section class="contacts">
+        <h2 class="contacts-title title">Контакты</h2>
+        <address class="contacts-address">
+            <ul class="contacts-list list">
+                <li class="contacts-item"><a class="contacts-link link"
+                        href="https://goo.gl/maps/tfbxRXFBMwgMF5U19?coh=178573&entry=tt" target="_blank"
+                        rel="noopener nofollow noreferrer">ул. Васильковская, 7А
+                        Киев, 08132</a></li>
+                <li class="contacts-item"><a class="contacts-link link" href="tel:+380441111111">+38 044 111 11
+                        11</a>
+                </li>
+                <li class="contacts-item"><a class="contacts-link"
+                        href="mailto:barbershop@email.com">barbershop@email.com</a></li>
+            </ul>
+        </address>
+        <p class="contacts-subtitle">Время работы</p>
+        <p class="contacts-time">Ежедневно с 9:00 до 22:00</p>
+    </section>
+</div>
+</div>
 
     </main>
 
@@ -306,6 +332,14 @@
                     rel="noopener nofollow noreferrer">Youtube</a></li>
         </ul>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>X</button>
+        </div>
+    </div>
+    
+    <script src="./js/modal.js"></script>
+
 </body>
 
 </html>
