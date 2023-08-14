@@ -239,9 +239,8 @@
                         <li class="masters-soc-item"><a href="" class="masters-soc-link link">
                                 <svg class="masters-soc-icon" width="20" height="20">
                                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                                </svg>
-                            </a></li>
-                        <li class="masters-soc-item"><a href="" class="masters-soc-link link"><svg class="masters-soc-icon" width="20"
+                                </svg> </a></li>
+                                <li class="masters-soc-item"><a href="" class="masters-soc-link link"><svg class="masters-soc-icon" width="20"
                                     height="20">
                                     <use href="./images/symbol-defs.svg#icon-twitter"></use>
                                 </svg></a></li>
@@ -258,8 +257,7 @@
             </ul>
         </div>
 
-        </section>
-
+            </section>
         <section class="gallery">
             <div class="container">
                 <p class="gallery-top-text top-text">На латинском языке “барба” означает “борода”</p>
@@ -332,9 +330,69 @@
                     rel="noopener nofollow noreferrer">Youtube</a></li>
         </ul>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+<div class="backdrop " data-modal><!-- is-hidden-->
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>X</button>
+            <p class="modal-title">Modal title</p>
+            <div class="modal-field">
+                <form>
+                    <div class="modal-field"></div>
+                    <label for="user-name" class="modal-label">Your name</label>
+                    <input type="text" class="modal-input" name="user-name" placeholder="John Smith" id="user-name" minlenghth="2">
+            
+            </div>
+            
+            <div class="modal-field">
+                <label for="user-tel" class="modal-label">Your phone</label>
+                <input type="tel" class="modal-input" name="user-tel" placeholder="Your phone" required id="user-tel">
+            </div>
+            
+            <div class="modal-field">
+                <label for="user-mail" class="modal-label">Your email</label>
+                <div class="input-wrap">
+                <input type="email" class="modal-input" name="user-mail" id="user-mail" placeholder="Your email">
+                <svg class="modal-icon" width="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+            </div>            </div>
+            
+            <div class="modal-field">
+                <label for="user-text" class="modal-label">Your comment</label>
+                <textarea name="user-text" id="user-text" class="modal-text" placeholder="Type your text"></textarea>
+            
+            </div>
+            
+            <!-- <fieldset>
+                                                                                                                <legend>Size</legend>
+                                                                                                                <label for="big">big</label>
+                                                                                                                <input type="radio" id="big" name="size" value="big">
+                                                                                                            
+                                                                                                                <label for="small">small</label>
+                                                                                                                <input type="radio" id="small" name="size" value="small">
+                                                                                                            </fieldset>
+                                                                                                            
+                                                                                                            <fieldset>
+                                                                                                                <legend>Add</legend>
+                                                                                                                <label for="tomato">Tomato</label>
+                                                                                                                <input type="checkbox" id="tomato" name="add" value="tomato">
+                                                                                                            
+                                                                                                                <label for="cheese">Cheese</label>
+                                                                                                                <input type="checkbox" id="cheese" name="add" value="cheese">
+                                                                                                            
+                                                                                                                <label for="pepperoni">Pepperoni</label>
+                                                                                                                <input type="checkbox" id="pepperoni" name="add" value="pepperoni">
+                                                                                                            </fieldset>
+                                                                                                            
+                                                                                                            <label for="user-city" class="modal-label">Your city</label>
+                                                                                                            <select name="user-city" id="user-city" class="modal-input">
+                                                                                                                <option value="Toronto">Toronto</option>
+                                                                                                                <option value="Montreal">Montreal</option>
+                                                                                                                <option value="Ottawa">Ottawa</option>
+                                                                                                            </select> -->
+            
+            <button type="submit">Submit</button>
+            </form>
+            </div>
         </div>
     </div>
     
