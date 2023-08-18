@@ -296,6 +296,23 @@
     <div class="container">
         <section class="online">
         <h2 class="online-title title">Онлайн-запись</h2>
+
+<form class="online-form">
+    <div class="input-field">
+        <input type="text" class="online-input" name="online-name" id="online-name" placeholder=" ">
+        <label for="online-name" class="online-label">Имя*</label>
+    </div>
+    <div class="input-field">
+        <input type="tel" class="online-input" name="online-tel" id="online-tel" placeholder=" ">
+        <label for="online-tel" class="online-label">Телефон*</label>
+    </div>
+    <div class="text-field">
+       <textarea name="online-mess" id="online-mess" class="online-mess" placeholder=" "></textarea>
+        <label for="online-name" class="online-label">Сообщение</label>
+    </div>
+    <button class="online-btn btn" type="submit" data-modal-open>Отправить</button>
+</form>
+
         </section>
 
     <section class="contacts">
@@ -330,36 +347,63 @@
                     rel="noopener nofollow noreferrer">Youtube</a></li>
         </ul>
     </footer>
-<div class="backdrop " data-modal><!-- is-hidden-->
+<div class="backdrop is-hidden" data-modal><!-- is-hidden-->
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>X</button>
             <p class="modal-title">Modal title</p>
             <div class="modal-field">
                 <form>
-                    <div class="modal-field"></div>
+                    <div class="modal-field">
                     <label for="user-name" class="modal-label">Your name</label>
+
+                    <div class="input-wrap">
                     <input type="text" class="modal-input" name="user-name" placeholder="John Smith" id="user-name" minlenghth="2">
-            
+            <svg class="modal-icon" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+            </svg>
             </div>
+        
+        </div>
             
             <div class="modal-field">
                 <label for="user-tel" class="modal-label">Your phone</label>
+
+                <div class="input-wrap">
                 <input type="tel" class="modal-input" name="user-tel" placeholder="Your phone" required id="user-tel">
+                <svg class="modal-icon" width="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+                </div>
+
             </div>
             
             <div class="modal-field">
                 <label for="user-mail" class="modal-label">Your email</label>
+
                 <div class="input-wrap">
                 <input type="email" class="modal-input" name="user-mail" id="user-mail" placeholder="Your email">
                 <svg class="modal-icon" width="18" height="18">
                     <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
-            </div>            </div>
+            </div>   
+
+         </div>
             
             <div class="modal-field">
                 <label for="user-text" class="modal-label">Your comment</label>
                 <textarea name="user-text" id="user-text" class="modal-text" placeholder="Type your text"></textarea>
             
+            </div>
+
+            <div class="modal-field">
+                <input type="checkbox" name="privacy" value="true" class="modal-check visually-hidden" id="privacy">
+                <label for="privacy" class="check-text">
+                    <span>
+                        <svg class="check-icon" width="11" height="8">
+                            <use href="./images/symbol-defs.svg#icon-check"></use>
+                        </svg>
+                    </span>
+                    Usage policy</label>
             </div>
             
             <!-- <fieldset>
