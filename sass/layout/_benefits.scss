@@ -22,14 +22,13 @@
     height: 133px;
     background-color: var(--main-bg-color);
     padding: 20px 24px;
-}
-
-.benefits-item:nth-child(odd) {
-    margin-right: 30px;
-}
-
-.benefits-item:nth-child(even) {
-    margin-top: 30px;
+    &:nth-child(odd) {
+            margin-right: 30px;
+        }
+    
+    &:nth-child(even) {
+            margin-top: 30px;
+        }
 }
 
 .benefits-item-count {
@@ -40,16 +39,15 @@
     letter-spacing: 0.05em;
     color: #303030;
     display: block;
-}
-
-.benefits-item-count::after {
-    content: '+';
-    color: var(--accent-color);
-    text-align: center;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.38;
-    vertical-align: top;
+    &::after {
+            content: '+';
+            color: var(--accent-color);
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.38;
+            vertical-align: top;
+        }
 }
 
 .benefits-item-text {

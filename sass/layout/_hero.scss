@@ -16,14 +16,13 @@
     transform-origin: top left;
     align-items: center;
     padding-left: 0;
-}
-
-.soc__list::before {
-    content: '';
-    width: 60px;
-    height: 1px;
-    background-color: var(--second-title-color);
-    margin-right: 40px;
+    &::before {
+            content: '';
+            width: 60px;
+            height: 1px;
+            background-color: var(--second-title-color);
+            margin-right: 40px;
+        }
 }
 
 .soc__item+.soc__item {
@@ -37,11 +36,10 @@
     letter-spacing: 0.2em;
     color: #303030;
     transition: color 300ms ease;
-}
-
-.soc__link:hover,
-.soc__link:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        }
 }
 
 .hero-content {

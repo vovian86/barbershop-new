@@ -5,12 +5,11 @@
     font-size: 42px;
     line-height: 1.16;
     letter-spacing: 0.05em;
-}
-
-.title--light {
-    color: var(--main-title-color);
-}
-
-.title--dark {
-    color: var(--second-title-color);
+    &--light {
+            color: var(--main-title-color);
+        }
+    
+    &--dark {
+            color: var(--second-title-color);
+        }
 }

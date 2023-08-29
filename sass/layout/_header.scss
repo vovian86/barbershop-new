@@ -3,11 +3,13 @@
     width: 100%;
     padding-top: 32px;
     padding-bottom: 32px;
-}
-
-.header .container {
-    display: flex;
-    align-items: center;
+    &__logo {
+            margin-right: 79px;
+        }
+    .container {
+            display: flex;
+            align-items: center;
+        }
 }
 
 .nav__list {
@@ -18,10 +20,6 @@
     margin-right: 40px;
 }
 
-.header__logo {
-    margin-right: 79px;
-}
-
 .nav__link,
 .connect__tel {
     font-weight: 600;
@@ -30,13 +28,9 @@
     letter-spacing: 0.1em;
     color: #FFFFFF;
     transition: color 300ms ease;
-}
-
-.nav__link:hover,
-.nav__link:focus,
-.connect__tel:hover,
-.connect__tel:focus {
-    color: var(--accent-color);
+    &:hover, &:focus {
+            color: var(--accent-color);
+        }
 }
 
 .nav__link.current {

@@ -8,11 +8,9 @@
     width: 44px;
     height: 44px;
     margin-right: 10px;
-}
-
-
-.socials__item:last-child {
-    margin-right: 0;
+    &:last-child {
+            margin-right: 0;
+        }
 }
 
 .socials__link {
@@ -24,20 +22,18 @@
     align-items: center;
     justify-content: center;
     color: var(--second-btn-color);
+    &:hover, &:focus {
+            background-color: var(--accent-color);
+            color: var(--main-btn-color);
+        }
 }
 
 .socials__icon {
     fill: currentColor;
 }
 
-.socials__link:hover,
-.socials__link:focus {
-    background-color: var(--accent-color);
-    color: var(--main-btn-color);
-}
-
 // Універсальний спосіб, не тільки для кольору і для іконок, але й для розміру, анімації, бекграунду...
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+
 //     .socials__link:hover .socials__icon,
 //     .socials__link:focus .socials__icon {
 //         fill: chocolate;

@@ -30,19 +30,13 @@
     outline: none;
     transition: border-color 300ms linear;
     color: rgba(190, 193, 202, 0.8);
+    &:focus {
+            border-color: #ffffff;
+        }
 }
 
-.online-input:focus,
 .online-mess:focus {
     border-color: #ffffff;
-}
-
-.online-input:focus+.online-label,
-.online-mess:focus+.online-label,
-.online-input:not(:placeholder-shown)+.online-mess,
-online-input:not(:placeholder-shown)+.online-label {
-    color: #ffffff;
-    transform: translateY(-100%);
 }
 
 .online-label {
@@ -57,6 +51,13 @@ online-input:not(:placeholder-shown)+.online-label {
     text-transform: uppercase;
 
     transition: color 300ms linear, transform 300ms linear;
+    .online-input:focus + &,
+    .online-input:not(:placeholder-shown) + &,
+    .online-mess:focus+&,
+    .online-mess:not(:placeholder-shown)+& {
+        color: #ffffff;
+        transform: translateY(-100%);
+    }
 }
 
 .text-field {
