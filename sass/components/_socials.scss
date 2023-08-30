@@ -18,8 +18,7 @@
     height: 100%;
     background-color: var(--main-btn-color);
     border-radius: 50%;
-    display: flex;
-    align-items: center;
+    @extend %align-list;
     justify-content: center;
     color: var(--second-btn-color);
     &:hover, &:focus {

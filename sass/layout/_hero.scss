@@ -11,10 +11,9 @@
 }
 
 .soc__list {
-    display: flex;
+    @extend %align-list;
     transform: rotate(-90deg) translate(-35px);
     transform-origin: top left;
-    align-items: center;
     padding-left: 0;
     &::before {
             content: '';

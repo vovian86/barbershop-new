@@ -146,8 +146,7 @@
     border: 2px solid #090b13;
     border-radius: 3px;
     margin-right: 5px;
-    display: flex;
-    align-items: center;
+   @extend %align-list;
     justify-content: center;
 }
 
