@@ -1,27 +1,45 @@
 .hero .container {
     display: flex;
+    width: 100%;
+    padding: 0;
+    @include tablet {
+        width: 720px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+        @include desktop {
+            width: 1200px;
+        }
 }
 
 .soc {
     width: 90px;
-    display: flex;
+    display: none;
     align-items: flex-end;
-    padding-left: 22px;
+    // padding-left: 22px;
     padding-bottom: 33px;
+    @include tablet {
+        display: flex;
+    }
 }
 
 .soc__list {
-    @extend %align-list;
+    @include tablet {
+        display: flex;
+        align-items: center;
+// @extend %align-list;
     transform: rotate(-90deg) translate(-35px);
     transform-origin: top left;
     padding-left: 0;
+
     &::before {
-            content: '';
-            width: 60px;
-            height: 1px;
-            background-color: var(--second-title-color);
-            margin-right: 40px;
-        }
+        content: '';
+        width: 60px;
+        height: 1px;
+        background-color: var(--second-title-color);
+        margin-right: 40px;
+    }
+    }    
 }
 
 .soc__item+.soc__item {
@@ -43,12 +61,30 @@
 
 .hero-content {
     background-color: #303030;
-    background-image: linear-gradient(rgba(25, 28, 38, 0.20), rgba(25, 28, 38, 0.20)), url(../images/hero-bg.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.20), rgba(25, 28, 38, 0.20)), url(../images/hero-bg-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 272px 96px 206px 96px;
+    // padding: 272px 96px 206px 96px;
+    padding: 208px 31px 183px;
     flex-grow: 1;
+    @include retina {
+        background-image: linear-gradient(rgba(25, 28, 38, 0.20), rgba(25, 28, 38, 0.20)), url(../images/hero-bg-mob-2x.jpg);
+    }
+    @include tablet {
+        padding: 280px 70px 234px;
+        background-image: linear-gradient(rgba(25, 28, 38, 0.20), rgba(25, 28, 38, 0.20)), url(../images/hero-bg-tab.jpg);
+        @include retina {
+                background-image: linear-gradient(rgba(25, 28, 38, 0.20), rgba(25, 28, 38, 0.20)), url(../images/hero-bg-tab-2x.jpg);
+            }
+    }
+        @include desktop {
+            padding: 272px 96px 206px 96px;
+            background-image: linear-gradient(rgba(25, 28, 38, 0.20), rgba(25, 28, 38, 0.20)), url(../images/hero-bg.jpg);
+            @include retina{
+                    background-image: linear-gradient(rgba(25, 28, 38, 0.20), rgba(25, 28, 38, 0.20)), url(../images/hero-bg-2x.jpg);
+                }
+        }
 }
 
 .hero-content__top-text {
@@ -58,12 +94,13 @@
 
 .hero-content__title {
     font-family: 'Raleway', sans-serif;
-    font-size: 72px;
-    line-height: 1.18;
+    font-size: 48px;
+    line-height: 1.17;
     letter-spacing: 0.05em;
     margin-bottom: var(--typical-margin);
     display: flex;
     align-items: baseline;
+    @extend %align-list;
 }
 
 /* .hero-content__title::before {
@@ -88,5 +125,11 @@
 */
 .hero-content__bottom-text {
     color: #9DA4BD;
-    max-width: 400px;
+    max-width: 306px;
+    @include tablet {
+        max-width: 349px;
+    }
+    @include desktop {
+        max-width: 400px;
+    }
 }
