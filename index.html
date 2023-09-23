@@ -17,7 +17,7 @@
 
 <body>
 
-    <!-- <header class="header">
+    <header class="header">
         <div class="container">
         <a class="logo header__logo" href="">
             <svg class="logo__icon" width="66" height="55">
@@ -35,8 +35,45 @@
             <a class="connect__tel link" href="tel:+380441111111">+38 044 111 11 11</a>
             <button class="connect__btn btn" type="button" data-modal-open>Онлайн-запись</button>
         </div>
+        <button type="button" class="menu-open-btn">
+            <svg class="mob-menu-icon" width="40" height="40">
+                <use href="./images/symbol-defs.svg#icon-menu-open"></use>
+            </svg>
+        </button>
     </div>
-    </header> -->
+    <div class="mob-menu is-hidden">
+        <div class="container">
+            <div class="mob-menu-top">
+<button type="button" class="menu-close-btn">
+    <svg class="mob-menu-icon" width="40" height="40">
+        <use href="./images/symbol-defs.svg#icon-menu-close"></use>
+    </svg>
+</button>
+<ul class="mob-menu-list list">
+    <li class="mob-menu-item"><a class="mob-menu-link current link" href="">О нас</a></li>
+    <li class="mob-menu-item"><a class="mob-menu-link link" href="">Услуги и цены</a></li>
+    <li class="mob-menu-item"><a class="mob-menu-link link" href="#masters">Мастера</a></li>
+    <li class="mob-menu-item"><a class="mob-menu-link link" href="">Контакты</a></li>
+</ul>
+            </div>
+            <div class="mob-menu-bottom">
+<div class="mob-connect">
+    <a class="mob-connect-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
+    <button class="mob-connect-btn btn" type="button" data-modal-open>Онлайн-запись</button>
+</div>
+<ul class="mob-soc-list list">
+    <li class="mob-soc-item"><a class="mob-soc-link link" href="" target="_blank"
+            rel="noopener nofollow noreferrer">Instagram</a>
+    </li>
+    <li class="mob-soc-item"><a class="mob-soc-link link" href="" target="_blank"
+            rel="noopener nofollow noreferrer">Youtube</a>
+    </li>
+</ul>
+            </div>
+            
+        </div>
+    </div>
+    </header>
 
     <main>
 
@@ -491,6 +528,7 @@
     </div>
     
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 
 </body>
 
