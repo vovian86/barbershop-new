@@ -23,18 +23,20 @@
             <svg class="logo__icon" width="66" height="55">
                 <use href="./images/symbol-defs.svg#icon-logo "></use>
             </svg></a>
-        <nav class="nav">
-            <ul class="nav__list list">
+    
+            <nav class="nav">
+                   <ul class="nav__list list">
                 <li class="nav__item"><a class="nav__link current link" href="">О нас</a></li>
                 <li class="nav__item"><a class="nav__link link" href="">Услуги и цены</a></li>
                 <li class="nav__item"><a class="nav__link link" href="#masters">Мастера</a></li>
                 <li class="nav__item"><a class="nav__link link" href="">Контакты</a></li>
             </ul>
-        </nav>
-        <div class="connect">
-            <a class="connect__tel link" href="tel:+380441111111">+38 044 111 11 11</a>
-            <button class="connect__btn btn" type="button" data-modal-open>Онлайн-запись</button>
-        </div>
+            </nav>
+            <div class="connect">
+                <a class="connect__tel link" href="tel:+380441111111">+38 044 111 11 11</a>
+                <button class="connect__btn btn" type="button" data-modal-open>Онлайн-запись</button>
+            </div>
+      
         <button type="button" class="menu-open-btn">
             <svg class="mob-menu-icon" width="40" height="40">
                 <use href="./images/symbol-defs.svg#icon-menu-open"></use>
@@ -97,13 +99,31 @@
             </div>
         </section>
 
-        <!-- <section class="about">
+        <section class="about">
             <div class="container">
             <ul class="pic-list list">
-                <li class="pic-list__item"><img src="./images/about-img-1.jpg" alt="Барбер бреет шею" width="270"
-                        height="445"></li>
-                <li class="pic-list__item"><img src="./images/about-img-2.jpg" alt="Барбер делает кантик" width="270"
-                        height="445"></li>
+                <li class="pic-list__item">
+
+                    <picture>
+                        <source srcset="./images/about-img-1.jpg 1x, 
+                        ./images/about-img-1-2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/about-img-1-tab.jpg 1x,
+                        ./images/about-img-1-tab-2x.jpg 2x" media="(min-width: 768px)">
+                        <img src="./images/about-img-1.jpg" alt="Барбер бреет шею" width="270">
+                    </picture>
+<!-- <img src="./images/about-img-1.jpg" alt="Барбер бреет шею" width="270"> -->
+                    </li>
+                <li class="pic-list__item">
+                    
+                    <picture>
+                        <source srcset="./images/about-img-2.jpg 1x, 
+                        ./images/about-img-2-2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/about-img-2-tab.jpg 1x,
+                     ./images/about-img-2-tab-2x.jpg 2x" media="(min-width: 768px)">
+                        <img src="./images/about-img-2.jpg" alt="Барбер делает кантик" width="270">
+                    </picture>
+<!-- <img src="./images/about-img-2.jpg" alt="Барбер делает кантик" width="270"> -->
+                </li>
             </ul>
         <div class="about-content">
             <p class="about-content__top-text top-text top-text--dark">О нас</p>
@@ -117,10 +137,10 @@
             <button class="about-content__btn btn" type="button">Онлайн-запись</button>
             </div>
         </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="prices">
-            <div class="container">
+        <section class="prices">
+            <div class="container prices-container">
             <p class="prices-top-text top-text">Проведи время в компании лучших мастеров</p>
             <h2 class="prices-title title">Услуги и цены</h2>
             <div class="prices-wrap">
@@ -163,9 +183,9 @@
                 </div>
             <button class="prices-btn btn" type="button">Онлайн-запись</button>
         </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="benefits">
+        <section class="benefits">
             <div class="container">
             <ul class="benefits-list list">
                 <li class="benefits-item">
@@ -193,7 +213,7 @@
                 10 раз прочитать. </p>
             </div>
             </div>
-        </section> -->
+        </section>
 
         <section class="masters" id="masters">
             <div class="container">
@@ -388,7 +408,7 @@
             </div>
         </section>
 
-<!-- <div class="contact-wrap">
+<div class="contact-wrap">
     <div class="container">
         <section class="online">
         <h2 class="online-title title">Онлайн-запись</h2>
@@ -430,7 +450,7 @@
         <p class="contacts-time">Ежедневно с 9:00 до 22:00</p>
     </section>
 </div>
-</div> -->
+</div>
 
     </main>
 

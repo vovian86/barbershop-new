@@ -1,8 +1,8 @@
 .container {
     width: 100%;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 31px;
+    padding-right: 31px;
     /* outline: 1px solid red; */
 
     @include mobile {
@@ -10,8 +10,12 @@
     }
    @include tablet {
        width: 720px;
+        padding-left: 15px;
+            padding-right: 15px;
    }
      @include desktop {
             width: 1200px;
+            padding-left: 15px;
+                padding-right: 15px;
         }
 }

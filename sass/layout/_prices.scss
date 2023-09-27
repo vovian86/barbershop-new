@@ -1,11 +1,40 @@
 .prices {
     background-color: #111319;
-    background-image: url(../images/prices-bg.png);
+    background-image: url(../images/prices-bg-mob.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 130px;
+    padding: 84px 0;
+    @include retina{
+        background-image: url(../images/prices-bg-mob-2x.png);
+    }
+    @include tablet {
+        padding: 100px 0;
+        background-image: url(../images/prices-bg-tab.png);
+        @include retina {
+            background-image: url(../images/prices-bg-tab-2x.png);
+        }
+    }
+    @include desktop {
+        padding-left: 15px;
+padding-top: 130px;
     padding-bottom: 130px;
+    background-image: url(../images/prices-bg.png);
+    @include retina {
+        background-image: url(../images/prices-bg-2x.png);
+    }
+    }    
+}
+
+.prices-container .container {
+    margin: 0 0;
+    margin-right: 0;
+    @include tablet {
+        margin: 0, auto;
+    }
+    @include desktop {
+        margin: 0, auto;
+    }
 }
 
 .prices-top-text {
@@ -19,29 +48,60 @@
 }
 
 .prices-wrap {
-    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    display: block;
+    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.20) 100%);
+    @include desktop {
+        display: flex;
+        background: transparent;
+    }
 }
 
 .prices-list {
-    padding: 30px 40px;
-    flex-grow: 1;
-    &-light {
-        background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.20) 100%);
-        }
-    
-    &-dark {
+    margin: 0;
+    flex-grow: 1;  
+    @include desktop {
+        padding: 30px 40px;
+        &-light {
+                    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.20) 100%);
+                    }
         background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.20) 100%);
-        }
+                &-dark {
+                    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.20) 100%);
+                }
+    }
+}
+
+.prices-list:not(:last-child) {
+    padding-bottom: 20px;
+    @include desktop {
+        padding-bottom: 0;
+    }
 }
 
 .prices-item-text {
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
+font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.14;
+    letter-spacing: 0.28px;
+
+    // font-size: 18px;
+    // line-height: 1.67;
+    // letter-spacing: 0.02em;
     color: #9DA4BD;
     &:first-child {
             order: -1;
         }
+    @include tablet {
+        font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.67;
+            letter-spacing: 0.36px;
+    }
 }
 
 .prices-item {

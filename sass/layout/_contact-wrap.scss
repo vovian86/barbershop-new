@@ -7,8 +7,12 @@
     max-width: 1280px;
     margin: 0 auto;
     .container {
+        display: flex;
+        flex-direction: column;
+        @include desktop{
             display: flex;
-            padding-top: 130px;
-            padding-bottom: 130px;
+                padding-top: 130px;
+                padding-bottom: 130px;
+        }
         }
 }
